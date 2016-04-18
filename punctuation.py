@@ -5,15 +5,6 @@ def cleaner(tweet):
 	"""remove punctuation repeated and introduce spaces between punctuation"""
 	clean_text = tweet
 	
-	##convert 1 in ! if 1 is found between two !
-	
-	#clean_text = re.sub("!1+","!!",clean_text)
-	#clean_text = re.sub("1+!","!!",clean_text)
-	#clean_text = re.sub(r"1+\?","!?",clean_text)
-	#clean_text = re.sub(r"\?1+","?!",clean_text)
-	
-	##print(clean_text)
-	
 	##add multistop tag when multiple punctuation signs are found
 	#clean_text = re.sub(r"!!+"," multi_exclamation ",clean_text)
 	#clean_text = re.sub(r"\?\?+"," multi_interrogation ",clean_text)
@@ -27,22 +18,6 @@ def cleaner(tweet):
 	
 		#remove the punctuation
 	clean_text = re.sub(r"(\.|,|:|;|\?|!|\)|\(|\-|\[|\]|\{|\}|\*|\||\<|\>|%|&|/|$|\+|@|#|\$|£|=|\^|~)"," ",clean_text)
-	
-	#introduce space between the words and the punctuation
-	
-	#clean_text = re.sub(r"\."," . ",clean_text)
-	#clean_text = re.sub(r";"," ; ",clean_text)
-	#clean_text = re.sub(r","," , ",clean_text)
-	#clean_text = re.sub(r"!"," ! ",clean_text)
-	#clean_text = re.sub(r"\?"," ? ",clean_text)
-	#clean_text = re.sub(r":"," : ",clean_text)
-	#clean_text = re.sub(r"\-"," - ",clean_text)
-	#clean_text = re.sub(r"\("," ( ",clean_text)
-	#clean_text = re.sub(r"\)"," ) ",clean_text)
-	#clean_text = re.sub(r"\["," [ ",clean_text)	
-	#clean_text = re.sub(r"\]"," ] ",clean_text)	
-	#clean_text = re.sub(r"\{"," { ",clean_text)	
-	#clean_text = re.sub(r"\}"," } ",clean_text)
 	
 	#remove the vowels repeated in sequence
 	clean_text = re.sub("[a]{3,}","aa",clean_text)
