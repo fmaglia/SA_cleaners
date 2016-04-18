@@ -7,7 +7,7 @@ def cleaner(tweet):
 	text = " " + tweet + " "
 	t2 = TweetTokenizer()
 	
-	f = open("acronimi.txt","r")
+	f = open("acronyms.txt","r")
 	while 1:
 		line = f.readline()
 		if line=="":
