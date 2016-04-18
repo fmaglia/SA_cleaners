@@ -52,7 +52,7 @@ class simpleapp_tk(Tkinter.Tk):
         #self.test = Tkinter.IntVar()
         #c = Tkinter.Checkbutton(self, text="Clicca se vuoi positive/negative in numero uguale", variable=self.test).pack()
 
-        button = Tkinter.Button(self,text=u"esegui elaborazione",font = "Arial 15 ",command=self.OnButtonClick).pack(anchor="w")
+        button = Tkinter.Button(self,text=u"GO!",font = "Arial 15 ",command=self.OnButtonClick).pack(anchor="w")
 
         self.labelVariable = Tkinter.StringVar()
         label = Tkinter.Label(self,textvariable=self.labelVariable, padx = 20,font = "Arial 15 ").pack(anchor = "w")
