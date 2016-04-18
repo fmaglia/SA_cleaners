@@ -2,7 +2,7 @@
 import re
 
 def cleaner(tweet):
-	"""convert the emoticons in the relative unicode"""
+	"""convert the emoticons in the relative sentiment group"""
 	clean_text = tweet
 	
 
