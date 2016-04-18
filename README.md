@@ -1,5 +1,11 @@
 # SA_cleaners
 
+Prerequites:
+- nltk.tokenize (sudo pip install -U nltk)
+- tkinter
+- enchant.checker
+
+
 Input: file .tsv with many raws that are labeled 
 
 (" positive The apple is good #fruits @pippo
