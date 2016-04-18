@@ -34,13 +34,13 @@ class simpleapp_tk(Tkinter.Tk):
         self.file_path = filedialog.askopenfilename()
         #print "path: "+self.file_path
         
-        label = Tkinter.Label(self,text="inserisci nome fileCleaned.tsv", padx = 20,font = "Arial 15 ").pack(anchor = "w")
+        label = Tkinter.Label(self,text="Insert nome of cleaned file .tsv", padx = 20,font = "Arial 15 ").pack(anchor = "w")
         
         self.destFinale = Tkinter.StringVar()
         self.entry = Tkinter.Entry(self,textvariable=self.destFinale, justify="center").pack(anchor="w")
         
         self.radio = Tkinter.IntVar()
-        titolo = Tkinter.Label(self,  text="Scegli il tipo di elaborazione:", padx = 20,pady = 10,font = "Arial 15 ").pack(anchor="w")
+        titolo = Tkinter.Label(self,  text="Choose a type of elaboration:", padx = 20,pady = 10,font = "Arial 15 ").pack(anchor="w")
         self.r1=Tkinter.Radiobutton(self, text="No preprocess", padx = 20,font = "Arial 15 ", variable=self.radio, value=1).pack(anchor = "w")
         self.r2=Tkinter.Radiobutton(self, text="Basic cleaner", padx = 20,font = "Arial 15 ", variable=self.radio, value=2).pack(anchor = "w")
         self.r3=Tkinter.Radiobutton(self, text="Basic + Dictionaries", padx = 20,font = "Arial 15 ", variable=self.radio, value=3).pack(anchor = "w")
@@ -159,7 +159,7 @@ class simpleapp_tk(Tkinter.Tk):
 
 if __name__ == "__main__":
     app = simpleapp_tk(None)
-    app.title('Cleaner SemEval tweet')
+    app.title('Cleaner Natural Language')
     app.mainloop()
 	
 	
