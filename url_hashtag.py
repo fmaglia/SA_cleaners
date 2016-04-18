@@ -2,7 +2,7 @@
 import re
 
 def cleaner(tweet):
-	"""remove urls, hashtag and quotes"""
+	"""remove urls, hashtag, quotes and RT from a tweet"""
 	clean_text = tweet
 	
 	clean_text = clean_text.replace("\t", " ").replace("\n", " ")
@@ -25,7 +25,6 @@ def cleaner(tweet):
 	#remove the RT
 	clean_text = re.sub(r"(RT )"," ", clean_text)
 
-	# ultimo raffinamento
 	# remove not ascii chars
 	tmp = ''
 	for c in clean_text:
