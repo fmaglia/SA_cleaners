@@ -2,7 +2,7 @@
 import re
 
 def cleaner(tweet):
-	"""convert negative verbs in not"""
+	"""final step of cleaning"""
 	clean_text = tweet
 	
 	clean_text = clean_text.lower()
