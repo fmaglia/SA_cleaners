@@ -6,7 +6,7 @@ def cleaner(tweet):
 	"""convert the insults in bad_word"""
 	text = tweet
 	t2 = TweetTokenizer()
-	f = open("insulti.txt","r")
+	f = open("insults.txt","r")
 	while 1:
 		line = f.readline()
 		
