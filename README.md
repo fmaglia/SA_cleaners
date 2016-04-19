@@ -8,9 +8,9 @@ Prerequites:
 
 Input: file .tsv with many raws that are labeled 
 
-(" positive The apple is good #fruits @pippo
+(" tweet_id    positive    The apple is gooood #fruits @pippo
 
-   negative My mother eat fruits!!!! 
+   tweet_id    negative     My moother eat fruits!!!! 
    
    ....")
    
