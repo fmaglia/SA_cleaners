@@ -19,3 +19,5 @@ Output file .tsv cleaned
 You can choose with an interactive GUI to clean your data using various techniques
 
 To execute the GUI: launch cleaner_GUI.py
+
+Article available at: http://ceur-ws.org/Vol-1748/paper-06.pdf
